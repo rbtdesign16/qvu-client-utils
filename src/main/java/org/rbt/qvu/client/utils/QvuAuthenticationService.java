@@ -15,5 +15,5 @@ public interface QvuAuthenticationService {
     public UserInformation getUserInformation(String user);
     public List<UserInformation> getAllUsers();
     public List<String> getAllRoles();
-    
+    // this is a test
 }
