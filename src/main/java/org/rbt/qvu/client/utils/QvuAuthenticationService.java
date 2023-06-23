@@ -14,6 +14,5 @@ public interface QvuAuthenticationService {
     public boolean authenticate(String user, String pass) throws AuthenticationException;
     public UserInformation getUserInformation(String user);
     public List<UserInformation> getAllUsers();
-    public List<String> getAllRoles();
-    // this is a test
+    public List<RoleInformation> getAllRoles();
 }
