@@ -17,8 +17,8 @@ public interface QvuAuthenticationService {
     public UserInformation getUserInformation(String user);
     public List<UserInformation> getAllUsers();
     public List<RoleInformation> getAllRoles();
-    public int saveUser(UserInformation user) throws Exception;
-    public int saveRole(RoleInformation role) throws Exception;
-    public int deleteUser(String userId) throws Exception;;
-    public int deleteRole(String roleName) throws Exception;;
+    public int saveUser(UserInformation user) throws SaveException;
+    public int saveRole(RoleInformation role) throws SaveException;
+    public int deleteUser(String userId) throws SaveException;;
+    public int deleteRole(String roleName) throws SaveException;;
 }
