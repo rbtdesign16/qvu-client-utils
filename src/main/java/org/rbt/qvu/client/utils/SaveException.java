@@ -8,12 +8,12 @@ package org.rbt.qvu.client.utils;
  *
  * @author rbtuc
  */
-public class AuthenticationException extends Exception {
-    public AuthenticationException(String message) {
+public class SaveException extends Exception {
+    public SaveException(String message) {
         super(message);
     }
     
-    public AuthenticationException(String message, Throwable t) {
+    public SaveException(String message, Throwable t) {
         super(message, t);
     }
 }
