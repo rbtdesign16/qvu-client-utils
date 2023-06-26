@@ -13,6 +13,8 @@ import java.util.List;
  */
 public class UserInformation {
     private String userId;
+    private String lastName;
+    private String firstName;
     private List<UserAttribute> attributes = new ArrayList<>();
     private List<String> roles = new ArrayList<>();
 
@@ -39,4 +41,22 @@ public class UserInformation {
     public void setRoles(List<String> roles) {
         this.roles = roles;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    
 }
