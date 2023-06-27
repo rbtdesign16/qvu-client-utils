@@ -15,8 +15,8 @@ public interface SecurityService {
     public User getUser(String user);
     public List<User> getAllUsers();
     public List<Role> getAllRoles();
-    public int saveUser(User user) throws SaveException;
-    public int saveRole(Role role) throws SaveException;
-    public int deleteUser(String userId) throws DeleteException;;
-    public int deleteRole(String roleName) throws DeleteException;;
+    public OperationResult saveUser(User user) throws SaveException;
+    public OperationResult saveRole(Role role) throws SaveException;
+    public OperationResult deleteUser(String userId) throws DeleteException;;
+    public OperationResult deleteRole(String roleName) throws DeleteException;;
 }
