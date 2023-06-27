@@ -11,6 +11,15 @@ package org.rbt.qvu.client.utils;
 public class RoleInformation {
     private String name;
     private String description;
+    private boolean newRole;
+
+    public boolean isNewRole() {
+        return newRole;
+    }
+
+    public void setNewRole(boolean newRole) {
+        this.newRole = newRole;
+    }
 
     public String getName() {
         return name;

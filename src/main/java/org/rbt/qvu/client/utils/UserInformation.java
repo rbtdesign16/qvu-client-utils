@@ -15,6 +15,7 @@ public class UserInformation {
     private String userId;
     private String lastName;
     private String firstName;
+    private boolean newUser;
     private List<UserAttribute> attributes = new ArrayList<>();
     private List<String> roles = new ArrayList<>();
 
@@ -56,6 +57,14 @@ public class UserInformation {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public boolean isNewUser() {
+        return newUser;
+    }
+
+    public void setNewUser(boolean newUser) {
+        this.newUser = newUser;
     }
     
     
