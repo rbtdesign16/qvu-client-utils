@@ -4,8 +4,8 @@
  */
 package org.rbt.qvu.client.utils;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -18,8 +18,8 @@ public class User {
     private String email;
     private String password;
     private boolean newRecord;
-    private Set<UserAttribute> attributes = new HashSet<>();
-    private Set<String> roles = new HashSet<>();
+    private List<UserAttribute> attributes = new ArrayList<>();
+    private List<String> roles = new ArrayList<>();
 
     public String getUserId() {
         return userId;
@@ -61,28 +61,28 @@ public class User {
         this.newRecord = newRecord;
     }
 
-    public Set<UserAttribute> getAttributes() {
-        return attributes;
-    }
-
-    public void setAttributes(Set<UserAttribute> attributes) {
-        this.attributes = attributes;
-    }
-
-    public Set<String> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<String> roles) {
-        this.roles = roles;
-    }
-
-    public String getPassword() {
+       public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<UserAttribute> getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(List<UserAttribute> attributes) {
+        this.attributes = attributes;
+    }
+
+    public List<String> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
     }
     
     
