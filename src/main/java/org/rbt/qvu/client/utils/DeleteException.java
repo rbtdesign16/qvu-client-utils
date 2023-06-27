@@ -20,6 +20,7 @@ public class DeleteException extends Exception {
 
     public DeleteException(OperationResult opResult) {
         super("error[" + opResult.getErrorCode() + "]: " + opResult.getMessage());
+        this.opResult = opResult;
     }
 
     public OperationResult getOpResult() {

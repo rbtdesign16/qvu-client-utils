@@ -20,6 +20,7 @@ public class SaveException extends Exception {
     
     public SaveException(OperationResult opResult) {
         super("error[" + opResult.getErrorCode() + "]: " + opResult.getMessage());
+        this.opResult = opResult;
     }
 
     public OperationResult getOpResult() {
