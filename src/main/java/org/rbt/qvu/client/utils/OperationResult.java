@@ -14,18 +14,10 @@ public class OperationResult {
     public static final int EXISTING_RECORD_UPDATED = 2;
     public static final int RECORD_NOT_FOUND = 3;
     public static final int UNEXPECTED_EXCEPTION = 4;
-    private Throwable error;
     private int errorCode = SUCCESS;
     private String message;
 
-    public Throwable getError() {
-        return error;
-    }
-
-    public void setError(Throwable error) {
-        this.error = error;
-    }
-
+    
     public String getMessage() {
         return message;
     }
