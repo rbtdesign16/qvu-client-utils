@@ -15,6 +15,7 @@ public class OperationResult {
     public static final int RECORD_NOT_FOUND = 3;
     public static final int UNEXPECTED_EXCEPTION = 4;
     private Throwable error;
+    private int errorCode = SUCCESS;
     private String message;
 
     public Throwable getError() {
@@ -31,6 +32,14 @@ public class OperationResult {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public int getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
     }
     
     
