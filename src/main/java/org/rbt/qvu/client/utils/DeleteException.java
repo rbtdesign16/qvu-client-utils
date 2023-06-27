@@ -9,6 +9,7 @@ package org.rbt.qvu.client.utils;
  * @author rbtuc
  */
 public class DeleteException extends Exception {
+   private OperationResult opResult;
     public DeleteException(String message) {
         super(message);
     }
@@ -16,4 +17,17 @@ public class DeleteException extends Exception {
     public DeleteException(String message, Throwable t) {
         super(message, t);
     }
+
+    public DeleteException(OperationResult opResult) {
+        super("error[" + opResult.getErrorCode() + "]: " + opResult.getMessage());
+    }
+
+    public OperationResult getOpResult() {
+        return opResult;
+    }
+
+    public void setOpResult(OperationResult opResult) {
+        this.opResult = opResult;
+    }
+    
 }
