@@ -16,6 +16,7 @@ public class User {
     private String lastName;
     private String firstName;
     private String email;
+    private String password;
     private boolean newRecord;
     private Set<UserAttribute> attributes = new HashSet<>();
     private Set<String> roles = new HashSet<>();
@@ -74,6 +75,14 @@ public class User {
 
     public void setRoles(Set<String> roles) {
         this.roles = roles;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
     
     
