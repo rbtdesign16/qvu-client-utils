@@ -10,15 +10,11 @@ import java.util.Objects;
  *
  * @author rbtuc
  */
-public class UserAttribute {
+public class Role {
     private String name;
-    private String value;
+    private String description;
+    private boolean newRecord;
 
-    public UserAttribute(String name, String value) {
-        this.name = name;
-        this.value = value;
-    }
-    
     public String getName() {
         return name;
     }
@@ -27,18 +23,18 @@ public class UserAttribute {
         this.name = name;
     }
 
-    public String getValue() {
-        return value;
+    public String getDescription() {
+        return description;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.name);
+        int hash = 5;
+        hash = 97 * hash + Objects.hashCode(this.name);
         return hash;
     }
 
@@ -53,10 +49,17 @@ public class UserAttribute {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final UserAttribute other = (UserAttribute) obj;
+        final Role other = (Role) obj;
         return Objects.equals(this.name, other.name);
+    }
+
+    public boolean isNewRecord() {
+        return newRecord;
+    }
+
+    public void setNewRecord(boolean newRecord) {
+        this.newRecord = newRecord;
     }
     
     
-
 }
