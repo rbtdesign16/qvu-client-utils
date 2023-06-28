@@ -4,14 +4,16 @@
  */
 package org.rbt.qvu.client.utils;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+import javax.security.auth.Subject;
 
 /**
  *
  * @author rbtuc
  */
-public class User {
+public class User implements Principal {
     private String userId;
     private String lastName;
     private String firstName;
@@ -85,5 +87,13 @@ public class User {
         this.roles = roles;
     }
     
+    public String getName() {
+        return userId;
+    }
     
+
+    @Override
+    public boolean implies(Subject subject) {
+        return !subject.getPrincipals(User.class).isEmpty(); 
+    }
 }
