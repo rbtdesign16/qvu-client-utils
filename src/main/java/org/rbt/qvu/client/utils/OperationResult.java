@@ -8,7 +8,7 @@ package org.rbt.qvu.client.utils;
  *
  * @author rbtuc
  */
-public class OperationResult {
+public class OperationResult <T> {
     public static final int SUCCESS = 0;
     public static final int RECORD_EXISTS = 1;
     public static final int EXISTING_RECORD_UPDATED = 2;
@@ -16,13 +16,13 @@ public class OperationResult {
     public static final int UNEXPECTED_EXCEPTION = 4;
     private int errorCode = SUCCESS;
     private String message;
-    private Object result;
+    private T result;
 
-    public Object getResult() {
+    public T getResult() {
         return result;
     }
 
-    public void setResult(Object result) {
+    public void setResult(T result) {
         this.result = result;
     }
     
