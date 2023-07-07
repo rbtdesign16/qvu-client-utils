@@ -16,7 +16,15 @@ public class OperationResult {
     public static final int UNEXPECTED_EXCEPTION = 4;
     private int errorCode = SUCCESS;
     private String message;
+    private Object result;
 
+    public Object getResult() {
+        return result;
+    }
+
+    public void setResult(Object result) {
+        this.result = result;
+    }
     
     public String getMessage() {
         return message;
