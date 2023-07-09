@@ -42,5 +42,7 @@ public class OperationResult <T> {
         this.errorCode = errorCode;
     }
     
-    
+    public boolean isSuccess() {
+        return (errorCode == SUCCESS);
+    }
 }
