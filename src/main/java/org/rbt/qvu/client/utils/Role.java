@@ -14,7 +14,6 @@ public class Role {
     private String name;
     private String description;
     private boolean newRecord;
-    private boolean baseRole;
 
     public String getName() {
         return name;
@@ -61,14 +60,4 @@ public class Role {
     public void setNewRecord(boolean newRecord) {
         this.newRecord = newRecord;
     }
-
-    public boolean isBaseRole() {
-        return baseRole;
-    }
-
-    public void setBaseRole(boolean baseRole) {
-        this.baseRole = baseRole;
-    }
-    
-    
 }
