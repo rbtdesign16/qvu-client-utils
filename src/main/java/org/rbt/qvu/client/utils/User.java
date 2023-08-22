@@ -4,6 +4,7 @@
  */
 package org.rbt.qvu.client.utils;
 
+import java.io.Serializable;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import javax.security.auth.Subject;
  *
  * @author rbtuc
  */
-public class User implements Principal {
+public class User implements Principal, Serializable {
     private String userId;
     private String lastName;
     private String firstName;

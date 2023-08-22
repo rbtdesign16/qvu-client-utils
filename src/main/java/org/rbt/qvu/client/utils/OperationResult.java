@@ -4,6 +4,8 @@
  */
 package org.rbt.qvu.client.utils;
 
+import java.io.Serializable;
+
 /**
  *
  * @author rbtuc
